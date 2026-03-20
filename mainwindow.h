@@ -14,6 +14,7 @@
 #include <QDoubleSpinBox>
 #include <QMessageBox>
 #include <QFileDialog>
+#include <QStatusBar>
 #include "datamanager.h"
 
 /**
@@ -76,9 +77,14 @@ private slots:
 
 private:
     /**
-     * @brief 刷新表格显示
+     * @brief 刷新表格显示（全部）
      */
     void refreshTable();
+
+    /**
+     * @brief 刷新表格显示（指定列表）
+     */
+    void refreshTable(const QVector<Student> &students);
 
     /**
      * @brief 显示提示信息
