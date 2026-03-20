@@ -5,6 +5,9 @@ project(StudentManager LANGUAGES CXX)
 set(CMAKE_CXX_STANDARD 11)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
+set(CMAKE_AUTOMOC ON)
+set(CMAKE_AUTOUIC ON)
+
 find_package(Qt5 REQUIRED COMPONENTS Widgets)
 
 add_executable(StudentManager
